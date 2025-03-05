@@ -9,6 +9,9 @@ import com.taolong.mybatis_myself.session.SqlSessionFactory;
 
 public class MySelfMybatisTest {
 
+    /**
+     * 测试MyBatis的基本功能。
+     */
 	@Test
 	public void testMybatis() {
 		SqlSessionFactory factory = new SqlSessionFactory();

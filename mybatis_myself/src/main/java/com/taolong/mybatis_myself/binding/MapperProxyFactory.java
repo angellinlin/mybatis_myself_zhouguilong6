@@ -14,6 +14,6 @@ public class MapperProxyFactory {
 		//创建一个invocationhandler的动态代理对象
 		MapperProxy<T> mapperProxy = new MapperProxy<>(sqlSession, mapperInterface);
 		return (T)Proxy.newProxyInstance(mapperInterface.getClassLoader(),
-					new Class[] {mapperInterface}, mapperProxy);
+				new Class[] {mapperInterface}, mapperProxy);
 	}
 }
